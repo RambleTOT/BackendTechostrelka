@@ -8,7 +8,7 @@ export class CreateUserDTO {
     @ApiProperty({example: '18', description: 'Возраст пользователя'})
     readonly age: number
     @ApiProperty({example: '12345678', description: 'Пароль'})
-    readonly passsword: string
+    readonly password: string
     @ApiProperty({example: 'ivan@mail.com', description: 'Почта'})
     readonly email: string
 }
