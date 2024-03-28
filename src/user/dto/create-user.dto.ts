@@ -11,4 +11,6 @@ export class CreateUserDTO {
     readonly password: string
     @ApiProperty({example: 'ivan@mail.com', description: 'Почта'})
     readonly email: string
+    @ApiProperty({example: 1, description: 'Индекс роли'})
+    readonly roleId: number
 }

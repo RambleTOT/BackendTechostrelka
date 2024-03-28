@@ -13,7 +13,6 @@ export class UserService {
     async createUser(dto: CreateUserDTO) {
         const role = await this.roleService.getRoleByValue("USER")
         const user = await this.userRepository.create(dto)
-       
         return user
     }
 

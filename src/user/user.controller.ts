@@ -4,6 +4,7 @@ import { UserService } from './user.service';
 import { ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
 import { User } from './user.model';
 import { JwtAuthGuard } from 'src/auth/jwt-auth.guard';
+import { Role } from 'src/roles/roles.model';
 
 @ApiTags('Пользователи')
 @Controller('api/user')
